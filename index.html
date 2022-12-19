@@ -12,6 +12,12 @@
       rel="stylesheet"
       />
 
+      <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+      <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+      <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+      <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
     <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
     <!-- ==== CSS BOOSTRAP ==== -->
     <link rel="stylesheet" href="/style/css/bootstrap.min.css" />
@@ -330,70 +336,164 @@
     </section>
     <!-- ======================================== END SERVICE ======================================== -->
     <!-- ======================================== GALLERY ======================================== -->
-    <section id="gallery" class="gallery">
+    <section id="portfolio" class="portfolio">
       <div class="container">
+
         <div class="section-title">
           <h2>Gallery</h2>
           <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit</p>
         </div>
+
         <div class="row">
-          <div
-            class="col-md-3 col-sm-3 col-lg-3 mt-4 d-flex
-            justify-content-center">
-            <div class="card border border-success" style="width: 20rem">
-              <img src="/img/galeri-1.jpeg" class="card-img-top" alt="..." />
-            </div>
-          </div>
-          <div
-            class="col-md-3 col-sm-3 col-lg-3 mt-4 d-flex
-            justify-content-center">
-            <div class="card border border-success" style="width: 20rem">
-              <img src="/img/galeri-2.jpeg" class="card-img-top" alt="..." />
-            </div>
-          </div>
-          <div
-            class="col-md-3 col-sm-3 col-lg-3 mt-4 d-flex
-            justify-content-center">
-            <div class="card border border-success" style="width: 20rem">
-              <img src="/img/galeri-3.jpeg" class="card-img-top" alt="..." />
-            </div>
-          </div>
-          <div
-            class="col-md-3 col-sm-3 col-lg-3 mt-4 d-flex
-            justify-content-center">
-            <div class="card border border-success" style="width: 20rem">
-              <img src="/img/galeri-4.jpeg" class="card-img-top" alt="..." />
-            </div>
-          </div>
-          <div
-            class="col-md-3 col-sm-3 col-lg-3 mt-4 d-flex
-            justify-content-center">
-            <div class="card border border-success" style="width: 20rem">
-              <img src="/img/galeri-5.jpeg" class="card-img-top" alt="..." />
-            </div>
-          </div>
-          <div
-            class="col-md-3 col-sm-3 col-lg-3 mt-4 d-flex
-            justify-content-center">
-            <div class="card border border-success" style="width: 20rem">
-              <img src="/img/galeri-6.jpeg" class="card-img-top" alt="..." />
-            </div>
-          </div>
-          <div
-            class="col-md-3 col-sm-3 col-lg-3 mt-4 d-flex
-            justify-content-center">
-            <div class="card border border-success" style="width: 20rem">
-              <img src="/img/galeri-7.jpeg" class="card-img-top" alt="..." />
-            </div>
-          </div>
-          <div
-            class="col-md-3 col-sm-3 col-lg-3 mt-4 d-flex
-            justify-content-center">
-            <div class="card border border-success" style="width: 20rem">
-              <img src="/img/galeri-1.jpeg" class="card-img-top" alt="..." />
-            </div>
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
           </div>
         </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="/img/galeri-1.jpeg" class="img-fluid" alt="">
+                <a href="/img/galeri-1.jpeg" data-gallery="portfolioGallery" class="link-preview portfolio-lightbox" title="Preview"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">App 1</a></h4>
+                <p>App</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="/img/galeri-2.jpeg" class="img-fluid" alt="">
+                <a href="/img/galeri-2.jpeg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">Web 3</a></h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="/img/galeri-3.jpeg" class="img-fluid" alt="">
+                <a href="/img/galeri-3.jpeg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">App 2</a></h4>
+                <p>App</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="/img/galeri-4.jpeg" class="img-fluid" alt="">
+                <a href="/img/galeri-4.jpeg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">Card 2</a></h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="/img/galeri-5.jpeg" class="img-fluid" alt="">
+                <a href="/img/galeri-5.jpeg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">Web 2</a></h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="/img/galeri-6.jpeg" class="img-fluid" alt="">
+                <a href="/img/galeri-6.jpeg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">App 3</a></h4>
+                <p>App</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="/img/galeri-7.jpeg" class="img-fluid" alt="">
+                <a href="/img/galeri-7.jpeg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">Card 1</a></h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="/img/galeri-1.jpeg" class="img-fluid" alt="">
+                <a href="/img/galeri-1.jpeg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">Card 3</a></h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="/img/galeri-2.jpeg" class="img-fluid" alt="">
+                <a href="/img/galeri-2.jpeg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">Web 1</a></h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </section>
     <!-- ======================================== END GALLERY ======================================== -->
@@ -411,9 +511,14 @@
             <div class="carousel-item active">
               <div class="container">
                 <div class="card p-5">
-                  <p class="text-center fst-italic">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, adipisci, accusamus eius sed culpa quidem corporis in ducimus molestias explicabo distinctio perspiciatis maxime eum, voluptate similique deserunt velit modi ipsum!"</p>
+                  <p class="text-center fst-italic">"Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Non, adipisci, accusamus eius
+                    sed culpa quidem corporis in ducimus molestias explicabo
+                    distinctio perspiciatis maxime eum, voluptate similique
+                    deserunt velit modi ipsum!"</p>
                   <div class="d-flex justify-content-center">
-                    <img src="/img/galeri-1.jpeg" class="rounded-circle rounded-5" width="200" height="200" alt="">
+                    <img src="/img/galeri-1.jpeg" class="rounded-circle
+                      rounded-5" width="200" height="200" alt="">
                   </div>
                 </div>
               </div>
@@ -421,9 +526,14 @@
             <div class="carousel-item">
               <div class="container">
                 <div class="card p-5">
-                  <p class="text-center fst-italic">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, adipisci, accusamus eius sed culpa quidem corporis in ducimus molestias explicabo distinctio perspiciatis maxime eum, voluptate similique deserunt velit modi ipsum!"</p>
+                  <p class="text-center fst-italic">"Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Non, adipisci, accusamus eius
+                    sed culpa quidem corporis in ducimus molestias explicabo
+                    distinctio perspiciatis maxime eum, voluptate similique
+                    deserunt velit modi ipsum!"</p>
                   <div class="d-flex justify-content-center">
-                    <img src="/img/galeri-2.jpeg" class="rounded-circle rounded-5" width="200" height="200" alt="">
+                    <img src="/img/galeri-2.jpeg" class="rounded-circle
+                      rounded-5" width="200" height="200" alt="">
                   </div>
                 </div>
               </div>
@@ -431,9 +541,14 @@
             <div class="carousel-item">
               <div class="container">
                 <div class="card p-5">
-                  <p class="text-center fst-italic">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, adipisci, accusamus eius sed culpa quidem corporis in ducimus molestias explicabo distinctio perspiciatis maxime eum, voluptate similique deserunt velit modi ipsum!"</p>
+                  <p class="text-center fst-italic">"Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Non, adipisci, accusamus eius
+                    sed culpa quidem corporis in ducimus molestias explicabo
+                    distinctio perspiciatis maxime eum, voluptate similique
+                    deserunt velit modi ipsum!"</p>
                   <div class="d-flex justify-content-center">
-                    <img src="/img/galeri-3.jpeg" class="rounded-circle rounded-5" width="200" height="200" alt="">
+                    <img src="/img/galeri-3.jpeg" class="rounded-circle
+                      rounded-5" width="200" height="200" alt="">
                   </div>
                 </div>
               </div>
@@ -441,9 +556,14 @@
             <div class="carousel-item">
               <div class="container">
                 <div class="card p-5">
-                  <p class="text-center fst-italic">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, adipisci, accusamus eius sed culpa quidem corporis in ducimus molestias explicabo distinctio perspiciatis maxime eum, voluptate similique deserunt velit modi ipsum!"</p>
+                  <p class="text-center fst-italic">"Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Non, adipisci, accusamus eius
+                    sed culpa quidem corporis in ducimus molestias explicabo
+                    distinctio perspiciatis maxime eum, voluptate similique
+                    deserunt velit modi ipsum!"</p>
                   <div class="d-flex justify-content-center">
-                    <img src="/img/galeri-4.jpeg" class="rounded-circle rounded-5" width="200" height="200" alt="">
+                    <img src="/img/galeri-4.jpeg" class="rounded-circle
+                      rounded-5" width="200" height="200" alt="">
                   </div>
                 </div>
               </div>
@@ -451,12 +571,14 @@
           </div>
           <button class="carousel-control-prev" type="button"
             data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon bg-success mt-5" aria-hidden="true"></span>
+            <span class="carousel-control-prev-icon bg-success mt-5"
+              aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
           <button class="carousel-control-next" type="button"
             data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon bg-success mt-5" aria-hidden="true"></span>
+            <span class="carousel-control-next-icon bg-success mt-5"
+              aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
@@ -464,6 +586,77 @@
       </div>
     </section>
     <!-- ======================================== END TESTIMONI ======================================== -->
+    <!-- ======================================== CONTACT ========================================-->
+    <section id="contact" class="contact section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Magnam dolores commodi suscipit eius consequatur ex aliquid fuga</p>
+        </div>
+
+        <div class="row mt-5 justify-content-center">
+
+          <div class="col-lg-10">
+
+            <div class="info-wrap">
+              <div class="row">
+                <div class="col-lg-4 info">
+                  <i class="fa-solid fa-map"></i>
+                  <h4>Location:</h4>
+                  <p>A108 Adam Street<br>New York, NY 535022</p>
+                </div>
+
+                <div class="col-lg-4 info mt-4 mt-lg-0">
+                  <i class="fa-solid fa-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>info@example.com<br>contact@example.com</p>
+                </div>
+
+                <div class="col-lg-4 info mt-4 mt-lg-0">
+                  <i class="fa-solid fa-phone"></i>
+                  <h4>Call:</h4>
+                  <p>+1 5589 55488 51<br>+1 5589 22475 14</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- ======================================== END CONTACT ======================================== -->
+
+    <!-- ======================================== FOOTER ======================================== -->
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+          </a>
+          <h6 class="mb-3 mb-md-0" style="color: #198754;">&copy; 2022 Company, Inc</h6>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <a href="#" class="nav-link text-success ms-2">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#" class="nav-link text-success ms-2">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="#" class="nav-link text-success ms-2">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="nav-link text-success ms-2">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+        </ul>
+      </footer>
+    </div>
+    <!-- ======================================== END FOOTER ======================================== -->
+
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
