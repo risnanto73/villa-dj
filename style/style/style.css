@@ -295,6 +295,7 @@ section {
   height: 48px;
 }
 
+/* count span */
 .counts .count-box span {
   font-size: 34px;
   display: block;
